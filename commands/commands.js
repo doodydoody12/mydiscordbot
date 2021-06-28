@@ -2,7 +2,7 @@ module.exports = {
 
     name: 'commands',
     description: "Shows a list of the available commands!",
-    execute(message, args, Discord) {
+    execute(message, args, cmd, client, Discord) {
         console.log("Working");
         const commandsEmbed = new Discord.MessageEmbed()
         .setColor('#554846')
@@ -18,6 +18,8 @@ module.exports = {
             {name: "Command six:", value: "^play: plays a song into the vc"},
             {name: "Command seven:", value: "^skip: skips the current queued song"},
             {name: "Command eight:", value: "^stop: stops the song and kicks DoodyBot out of the vc"},
+            {name: "Command nine:", value: "^mute: mutes the person you @ after the message(only for admin)"},
+            {name: "Command ten:", value: "^unmute: unmutes the person you @after the message(only for admin)"},
             
         )
         .setImage('https://i.postimg.cc/zftSmvqt/shadow.png')
