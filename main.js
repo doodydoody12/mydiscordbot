@@ -50,6 +50,13 @@ client.on('message', message =>{
 //music - stop
   }else if(command === 'stop', 's'){
     client.commands.get('stopmusic').execute(message,args, command, client, Discord);
+//muted 
+  }else if(command === 'mute'){
+    client.commands.get('muted').execute(message,args);
+//unmute
+  }else if(command === 'unmute'){
+    client.commands.get('unmuted').execute(message,args);
+
   }
 
 });
